@@ -1,0 +1,18 @@
+{
+    "accountAssociation": {
+      "header": "eyJmaWQiOjQ1NTczMiwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDJGMDY4MkFjNEU2YWNDRTYwOEM0NGNCN0Y0NzQwNTAwYjg1RDhhN0UifQ",
+      "payload": "eyJkb21haW4iOiI1YmIwLTEwMi05MC05Ni0yMjgubmdyb2stZnJlZS5hcHAifQ",
+      "signature": "MHgyMmFiMzUyNmFiOGJlMzIwMjdhMDM2NTM5ZTZlNzcxMDYxMTg5NmYxODdhZGU3ZmYxNDQwOWFhZWRjNDMxZDY5NTliMTEzMjZhYzE2YzVjMWEzZDNmZjE5MTZlYjFiMTQ0ZjhjODQwM2JiN2FhMmFjZjc4YzBkMjc3YmU4MGQzNjFi"
+    },
+    "frame": {
+      "version": "1",
+      "name": "Example Frame",
+      "iconUrl": "https://5bb0-102-90-96-228.ngrok-free.app/icon.png",
+      "homeUrl": "https://5bb0-102-90-96-228.ngrok-free.app",
+      "imageUrl": "https://5bb0-102-90-96-228.ngrok-free.app/image.png",
+      "buttonTitle": "Check this out",
+      "splashImageUrl": "https://5bb0-102-90-96-228.ngrok-free.app/splash.png",
+      "splashBackgroundColor": "#eeccff",
+      "webhookUrl": "https://5bb0-102-90-96-228.ngrok-free.app/api/webhook"
+    }
+  }

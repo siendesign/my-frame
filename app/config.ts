@@ -1,0 +1,1 @@
+export const NEXT_PUBLIC_URL = 'https://5bb0-102-90-96-228.ngrok-free.app'

@@ -42,6 +42,7 @@ export default function Demo() {
 
       <div className="flex flex-col gap-2 mt-4">
         <ConnectKitButton />
+        <ConnectWallet />
       </div>
     </div>
   );

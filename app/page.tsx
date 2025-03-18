@@ -3,6 +3,10 @@
 import dynamic from 'next/dynamic';
 import { NEXT_PUBLIC_URL } from './config';
 import { Metadata } from 'next';
+import { QueryClient } from '@tanstack/react-query';
+import { useAccount } from 'wagmi';
+import Account from './components/account';
+import { WalletOptions } from './components/wallet-options';
 
 const Demo = dynamic(() => import('./components/Demo'), {
   ssr: false,
@@ -37,6 +41,11 @@ export async function generateMetadata(): Promise<Metadata> {
     },
   };
 }
+
+// set up react query client
+const queryClient = new QueryClient();
+
+
 
 export default function Home() {
   return (

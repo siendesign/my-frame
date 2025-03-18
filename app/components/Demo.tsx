@@ -1,6 +1,12 @@
 'use client';
 import { useEffect, useState } from "react";
+// @ts-ignore
 import sdk, { type FrameContext } from "@farcaster/frame-sdk";
+import { WalletOptions } from "./wallet-options";
+import { useAccount } from "wagmi";
+import Account from "./account";
+import ConnectButton from "./appkit-connect";
+import { ConnectKitButton } from "connectkit";
 
 
 export default function Demo() {
@@ -22,11 +28,21 @@ export default function Demo() {
     return <div>Loading...</div>;
   }
 
+  function ConnectWallet() {
+    const { isConnected } = useAccount();
+    if (isConnected) return <Account />;
+    return <ConnectButton />;
+  }
+
   return (
     <div className="w-[300px] mx-auto py-4 px-2">
       <pre className="font-mono text-xs whitespace-pre-wrap break-words max-w-[260px] overflow-x-">
         {JSON.stringify(context, null, 2)}
       </pre>
+
+      <div className="flex flex-col gap-2 mt-4">
+        <ConnectKitButton />
+      </div>
     </div>
   );
 }
